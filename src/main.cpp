@@ -424,6 +424,7 @@ void setup() {
     Serial.print("RTC is NOT running!");
     Serial.println();
   }
+  
   // Create the BLE Device
   BLEDevice::init("SMART DEVICES");
   // Create the BLE Server
