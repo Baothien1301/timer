@@ -36,8 +36,8 @@
 #define CMD_SCH_DIS     'D'
 #define CMD_SCH_READ    'R'
 #define CMD_ERROR       'E'
-#define CHANEL_0    34
-#define CHANEL_1    35
+#define CHANEL_0    26
+#define CHANEL_1    25
 #define CHANEL_2    32
 #define CHANEL_3    33
 BLEServer *pServer = NULL;
@@ -302,6 +302,7 @@ void checkSchedule(){
           if(deviceConnected) sendResponse('F','3');
         }
       }
+      saveData();
       setOutput();
     }
   }
